@@ -178,6 +178,7 @@ h2
   background: $accent
   color: #fff
   padding: 10px 27px
+
   &:hover
     background: $accent2
     color: #fff
@@ -215,6 +216,17 @@ h2
   &:hover
     color: #000
 
+.links-black
+  color: #000
+  &:hover
+    color: $accent2
+
+.links-details
+  font-style: italic
+  font-size: 13px
+  font-weight: 300
+  margin: 5px 0 0 auto
+
 .text-decoration
   text-decoration: underline
 
@@ -228,6 +240,14 @@ h2
 
 .bg-blue-grey
   background: $accent2
+
+.w-100
+  width: 100%
+
+.wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
 
 
 //header
@@ -362,6 +382,7 @@ header
   color: #000
   display: flex
   align-items: center
+
   &__icon
     display: flex
     align-items: center
@@ -369,17 +390,322 @@ header
     width: 38px
     min-width: 38px
     margin: 0 17px 0 0
+
   &__text
     max-width: 160px
     width: 100%
 
+
+//specialist
+.specialist
+  position: relative
+  padding: 111px 0 69px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -1
+    height: 100%
+    width: 359px
+    background: linear-gradient(135.18deg, #D8DBE0 -35.54%, rgba(216, 219, 224, 0) 115.96%)
+
 .slick-slide
   outline: none
 
-.certificates-slider
+.slick-slider
   width: 100%
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  background: transparent
+  width: 53px
+  height: 53px
+  border: none
+  display: flex
+  align-items: center
+  justify-content: center
+  opacity: 1
+  z-index: 1
+  padding: 15px 18px
+  cursor: pointer
+  fill: #C4C4C4
+  &:hover
+    fill: $accent
+
+.slick-prev
+  left: 0
+
+.slick-next
+  right: 0
+
+.certificates-slider
   max-width: 367px
   padding: 0 53px
+
+  .slick-next
+    fill: #C4C4C4
+
+  .slick-prev
+    fill: #fff
+
+.certificates-box
+  display: flex
+  align-items: center
+  justify-content: center
+
+.specialist-wrapper
+  width: calc(100% - 367px)
+  padding: 0 0 0 84px
+  .wrapper
+    justify-content: space-between
+
+
+.specialist-box
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 34px 0 0
+  font-size: 18px
+  line-height: 24px
+  &__avatar
+    width: 130px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+  &__content
+    width: calc(100% - 130px)
+    padding: 0 0 0 32px
+    max-width: 170px
+  h3
+    margin: 0 0 8px
+
+.list-characteristics
+  li
+    &:after
+      content: '/'
+      display: inline-block
+      margin: 0 5px
+    &:last-child
+      &:after
+        display: none
+
+//reviews
+.reviews
+  padding: 22px 0 70px
+  h2
+    margin: 0 auto 39px
+    text-align: center
+
+.reviews-slider
+  padding: 0 104px
+  .slick-arrow
+    border: 3px solid #C4C4C4
+      radius: 50%
+    padding: 10px 18px
+  .slick-current + .slick-slide
+    .reviews-box
+      margin: 0 0 0 auto
+
+
+.reviews-box
+  width: fit-content
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  &__avatar
+    width: 92px
+    display: flex
+    align-items: center
+  &__content
+    width: calc(100% - 92px)
+    padding: 0 0 0 14px
+    max-width: 331px
+  h3
+    font-style: italic
+    font-size: 18px
+    font-weight: 300
+
+//articles
+.articles
+  background: linear-gradient(244.39deg, rgba(216, 219, 224, 0.44) -3.61%, rgba(216, 219, 224, 0.167362) 44.03%, rgba(216, 219, 224, 0) 73.27%)
+  padding: 92px 0
+  .container
+    align-items: stretch
+    justify-content: space-between
+
+.article-box
+  background: #ffffff
+  width: calc(50% - 31.5px)
+  border: 2px solid #C4C4C4
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+  &__img
+    width: 100%
+    height: 239px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    height: calc(100% - 239px)
+    padding: 16px 31px 27px 37px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  .box-text
+    margin: 0 0 auto
+  h3
+    width: 100%
+    font-size: 24px
+    margin: 0 0 16px
+    color: #020101
+
+//price-section
+.price-section
+  padding: 82px 0 109px
+  .container
+    justify-content: space-between
+    align-items: flex-start
+  h2
+    margin: 0
+
+.result
+  max-width: 518px
+  width: 100%
+  h2
+    margin: 0 0 49px
+
+.result-slider__item
+  display: flex
+  align-items: stretch
+  width: 100%
+
+.result-item__before, .result-item__after
+  width: 50%
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.slick-dots
+  position: relative
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  bottom: 0
+  margin: 16px 0 0
+  li
+    cursor: pointer
+    display: flex
+    align-items: center
+    border-radius: 50%
+    transition: .3s ease
+    width: 8px
+    height: 8px
+    background: linear-gradient(0deg, #CACACA, #CACACA), #CACACA
+    margin: 0 7px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: $accent
+
+.price
+  width: calc(100% - 518px)
+  max-width: 523px
+  h3
+    font-size: 18px
+  .box-text
+    margin: 38px 0 0
+
+
+.doctor-box
+  display: flex
+  align-items: center
+  margin: 0 0 8px
+  &__avatar
+    max-width: 110px
+    width: 100%
+    display: flex
+    align-items: center
+  &__body
+    width: calc(100% - 110px)
+    padding: 0 0 0 18px
+    max-width: 200px
+
+.list-price
+  max-width: 310px
+  width: 100%
+  font-size: 13px
+  li
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    position: relative
+    width: 100%
+    margin: 0 0 3px
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 1px
+      border-bottom: 1px dotted #000
+      bottom: 3px
+      left: 0
+      z-index: -1
+    &:last-child
+      margin: 0
+    span
+      text-align: right
+      font-size: 18px
+      background: #fff
+      display: inline-block
+    p
+      background: #fff
+
+
+
+.price-box
+  margin: 66px 0 0
+  max-width: 350px
+  width: 100%
+  h3
+    margin: 0 0 14px
+    &:last-child
+      margin: 7px 0 0
+
+
+//contacts
+.contacts
+  padding: 64px 0 49px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    width: 502px
+    height: 100%
+    z-index: -1
+    background: linear-gradient(250.38deg, #D8DBE0 -5.46%, rgba(216, 219, 224, 0) 120.04%)
+  h2
+    margin: 0 0 6px
+
 
 @import "media"
 // Всегда в конце
