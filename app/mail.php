@@ -1,7 +1,7 @@
 <?php
 
-$recepient = "test@gmail.com";
-$sitename = "Альфа фасад-центр";
+$recepient = "test@gmail.com"; //заменить на свой email
+$sitename = "Псориаз Центр";
 
 $name = trim($_POST["name"]);
 $phone = trim($_POST["phone"]);

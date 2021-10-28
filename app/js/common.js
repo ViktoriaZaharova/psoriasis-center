@@ -36,7 +36,9 @@ $('.result-slider').slick({
     slidesToShow: 1,
     arrows: false,
     dots: true,
-    fade: true
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
 
 $('[name="phone"]').mask('+7 999 999 99-99');
