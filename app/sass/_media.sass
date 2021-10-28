@@ -3,53 +3,342 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1200px)
+  .menu li
+    margin: 0 30px 0 0
+
+  .main
+    padding: 211px 0 107px
+
+  .box-text p
+    margin: 0 0 20px
+
+  .specialist-wrapper
+    padding: 0 0 0 30px
+    width: calc(100% - 320px)
+
+  .specialist-box__content
+    padding: 0 0 0 20px
 
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+  .certificates-slider
+    max-width: 320px
 
+  .specialist
+    padding: 30px 0
+    h2
+      margin: 0
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+  .reviews-slider
+    padding: 0 60px
 
+  .reviews-box
+    padding: 0 20px
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
+  .footer-menu li
+    margin: 0 20px 4px 0
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  .menu
+    font-size: 14px
+
+    li
+      margin: 0 10px 0 0
+
+  .main-content
+    max-width: 400px
+
+  .logo
+    max-width: 170px
+
+  .main
+    padding: 170px 0 70px
+
+  .advantages-item__icon
+    width: 60px
+    height: 60px
+    padding: 12px
+
+  .advantages-item__text
+    width: calc(100% - 60px)
+    padding: 0 0 0 10px
+    max-width: 286px
+    br
+      display: none
+
+  .advantages
+    padding: 30px 0 20px
+
+  .about-content
+    max-width: 400px
+    padding: 30px 0 40px
+
+  h2
+    font-size: 26px
+
+  .links-document
+    margin: 0 0 10px
+    width: 100%
+
+  .about-img
+    width: 500px
+    min-width: 500px
+
+  .specialist:before
+    display: none
+
+  .specialist-wrapper
+    padding: 0
+    width: 100%
+    order: -1
+    margin: 0 0 30px
+
+  .certificates-slider
+    margin: 0 auto
+    .slick-prev
+      fill: #C4C4C4
+
+  .specialist-wrapper .wrapper
+    justify-content: space-around
+
+  .result
+    max-width: 400px
+
+  .price
+    width: calc(100% - 400px)
+    padding: 0 30px 0 0
+
+  .price-section
+    padding: 40px 0
+
+  .price-section
+    margin: 30px 0 0
+
+  .contacts-wrapper
+    max-width: none
+    width: 100%
+    margin: 0 0 30px
+
+  .contacts
+    padding: 30px 0
+    &:after
+      width: 40%
+
+  .callback
+    margin: 0 auto
+    h3
+      font-size: 20px
+
+  .footer-wrapper
+    flex-wrap: wrap
+    .schedule-list
+      margin: 20px 0 0
+
+  footer
+    padding: 30px 0
+    .container
+      align-items: flex-start
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .btn-burger
+    display: flex
+
+  .logo
+    margin: 0 auto 0 0
+
+  .main
+    padding: 100px 0 50px
+
+  header
+    padding: 15px 0
+    .menu
+      display: none
+
+  .advantages-item__text
+    max-width: none
+
+  h2
+    font-size: 24px
+
+  .about-img
+    margin: 20px auto 0
+    min-width: auto
+    max-width: 500px
+    width: 100%
+
+  .about
+    padding: 30px 0
+    .container
+      align-items: flex-start
+      flex-direction: column
+
+  .about-content
+    max-width: none
+    padding: 0
+
+  .about-content__footer
+    justify-content: center
+
+  .links-document
+    justify-content: center
+
+  .specialist-box__avatar
+    width: 100px
 
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  .specialist-box
+    font-size: 16px
+
+  .specialist-box__content
+    width: calc(100% - 100px)
+    padding: 0 0 0 20px
+
+  .reviews-box
+    padding: 0
+
+
+  .reviews-box__content
+    max-width: none
+
+  .slick-arrow
+    width: 40px
+    height: 40px
+    padding: 10px
+
+  .reviews-slider .slick-arrow
+    padding: 10px
+    border-width: 2px
+
+  .reviews
+    padding: 22px 0 50px
+    h2
+      margin: 0 auto 30px
+
+  .article-box
+    width: calc(50% - 15px)
+    &__img
+      height: 200px
+    &__body
+      height: calc(100% - 200px)
+      padding: 15px
+    h3
+      font-size: 20px
+      margin: 0 0 10px
+
+  .articles
+    padding: 40px 0
+
+  .price
+    width: 100%
+    margin: 0 0 40px
+    max-width: none
+    padding: 0
+
+  .result
+    max-width: none
+    h2
+      margin: 0 0 30px
+
+  .price-box
+    margin: 30px 0 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .main-content
+    max-width: none
+    padding: 20px
+    width: 100%
+    background: rgba($accent, .7)
+
+  h1
+    font-size: 20px
+
+  .main .phone
+    font-size: 20px
+
+  .logo
+    max-width: 150px
+
+  .specialist-box
+    width: 100%
+    margin: 30px 0 0
+
+  .specialist-box__content
+    max-width: none
+
+  .footer-box
+    width: 100%
+
+  .phones
+    justify-content: flex-start
+
+  .phones-icon
+    order: -1
+    margin: 0 10px 0 0
+
+  footer .container
+    align-items: flex-start
+    .logo
+      margin: 0 auto 20px
+    .address
+      justify-content: flex-start
+      text-align: left
+    .address-icon
+      order: -1
+      margin: 0 10px 0 0
+    .mail
+      justify-content: flex-start
+    .mail-icon
+      order: -1
+      margin: 0 10px 0 0
+
+  .footer-wrapper .schedule-list
+    width: 100%
+    margin: 20px 0
+    max-width: none
+
+@media only screen and (max-width: 480px)
+  .phone
+    font-size: 13px
+
+  header
+    background: rgba(247, 247, 247, 0.45)
+
+  .logo
+    max-width: 120px
+
+  .phone-icon
+    width: 12px
+    min-width: 12px
+    height: 15px
+
+  .links-version
+    padding: 0
+    text-align: right
+
+  .btn-burger
+    margin: 0 0 0 15px
+
+  .reviews-box
+    flex-direction: column
+    align-items: center
+    &__content
+      width: 100%
+      padding: 0
+      margin: 20px 0 0
+
+  .reviews-slider
+    padding: 0 45px
+
+  .article-box
+    width: 100%
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
 

@@ -35,6 +35,20 @@
 
 <body>
 
+<div class="mobile-menu">
+  <div class="btn-close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+  <ul class="menu">
+    <li><a href="#about" class="go_to">О нас</a></li>
+    <li><a href="#price" class="go_to">Цены</a></li>
+    <li><a href="#result" class="go_to">Результаты</a></li>
+    <li><a href="#reviews" class="go_to">Отзывы</a></li>
+    <li><a href="#articles" class="go_to">О псориазе</a></li>
+    <li><a href="#contacts" class="go_to">Контакты</a></li>
+  </ul>
+</div>
+
 <header>
   <div class="container">
     <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
@@ -53,6 +67,8 @@
       </a>
       <a href="#" class="links-white text-decoration links-version">старая версия сайта</a>
     </div>
+
+    <div class="btn-burger"><span></span><span></span><span></span></div>
   </div>
 </header>
 
@@ -150,7 +166,7 @@
           <span class="links-document__text">Медицинская лицензия № ЛО-78-0Т-007536 </span>
         </a>
 
-        <a href="document.html" class="btn btn-accent">Правовые документы</a>
+        <a href="#" class="btn btn-accent" target="_blank">Правовые документы</a>
       </div>
     </div>
 
@@ -296,7 +312,7 @@
             грибовидный микоз, красный плоский лишай
             и многие др. </p>
         </div>
-        <a href="#" class="links-black text-decoration links-details" target="_blank">Читать далее</a>
+        <a href="article.html" class="links-black text-decoration links-details">Читать далее</a>
       </div>
     </div>
 
@@ -310,7 +326,7 @@
             ультрафиолетовых лучей (УВА).
           </p>
         </div>
-        <a href="#" class="links-black text-decoration links-details" target="_blank">Читать далее</a>
+        <a href="article.html" class="links-black text-decoration links-details">Читать далее</a>
       </div>
     </div>
   </div>
@@ -391,25 +407,212 @@
 <section class="contacts" id="contacts">
   <div class="container">
     <h2>Контакты</h2>
+
+    <div class="wrapper w-100">
+      <div class="contacts-wrapper">
+        <div class="contacts-box">
+          <div class="contacts-box__head">
+            <div class="contacts-box__icon"><img src="img/clock.svg" alt=""></div>
+            <h3>Режим работы</h3>
+          </div>
+          <div class="contacts-box__body">
+            <ul class="schedule-list">
+              <li>
+                <p>Понедельник – Пятница </p>
+                <span>09:30 — 20:00</span>
+              </li>
+              <li>
+                <p>Суббота </p>
+                <span>10:00 — 15:00</span>
+              </li>
+              <li>
+                <p>Воскресение</p>
+                <span>выходной</span>
+              </li>
+            </ul>
+
+            <a href="#scheduleModal" class="btn btn-accent open_modal btn-schedule">Изменение в графике работы</a>
+
+            <div class="address">
+              <div class="address-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <div class="address-text">
+                <p>Санкт-Петербург, Малый проспект В.О., д.5 лит. А</p>
+                <span> м. Василеостровская / м. Спортивная-2
+                (зайти в арку, справа во дворе дверь
+                с золотой вывеской “Псориаз-центр”)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts-box__footer">
+            <a href="tel:+78123287912" class="phone">
+              <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+              <span class="phone-text">8 (812) 328-79-12</span>
+            </a>
+
+            <a href="mailto:psoriascentr@mail.ru" class="mail">
+              <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+              <span class="mail-text">psoriascentr@mail.ru</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="contacts-box">
+          <div class="contacts-box__head">
+            <div class="contacts-box__icon"><img src="img/requisites.svg" alt=""></div>
+            <h3>Реквизиты</h3>
+          </div>
+          <div class="contacts-box__body">
+            <div class="box-text">
+              <ul class="list-requisites">
+                <li>Общество с ограниченной ответственностью</li>
+                <li>“Медицинский центр "Компания АЛЕКСАНДР"</li>
+                <li>ИНН 7707113509</li>
+                <li>ОГРН 1037739350395</li>
+              </ul>
+
+              <p>Дни обращений граждан к руководству: вторник и четверг с 10.00 до 16.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callback" id="callback">
+        <h3>Оставьте заявку<br>
+          или задайте вопрос</h3>
+        <form method="post" class="form">
+          <label>
+            <input type="text" name="name" placeholder="Имя">
+          </label>
+          <label>
+            <input type="text" name="phone" placeholder="+7 923 123 45-67 " required>
+          </label>
+          <label>
+            <input type="text" name="mail" placeholder="E-mail" required>
+          </label>
+          <label>
+            <textarea name="message" placeholder="Сообщение"></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-check">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я согласен на обработку персональных данных</span>
+          </label>
+          <button type="submit" class="btn btn-accent">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="">
-  <div class="container">
-
-  </div>
-</section>
+<div class="map">
+  <iframe src="https://yandex.ru/map-widget/v1/-/CCUqvPh3WB" frameborder="1"
+          allowfullscreen="true" style="position:relative;"></iframe>
+</div>
 
 <footer>
   <div class="container">
+    <div class="footer-box">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
 
+      <div class="footer-wrapper">
+        <ul class="footer-menu">
+          <li><a href="#about" class="go_to">О нас</a></li>
+          <li><a href="#price" class="go_to">Цены</a></li>
+          <li><a href="#result" class="go_to">Результаты</a></li>
+          <li><a href="#reviews" class="go_to">Отзывы</a></li>
+          <li><a href="#articles" class="go_to">О псориазе</a></li>
+          <li><a href="#contacts" class="go_to">Контакты</a></li>
+        </ul>
+
+        <ul class="schedule-list">
+          <li>
+            <p>Понедельник – Пятница </p>
+            <span>09:30 — 20:00</span>
+          </li>
+          <li>
+            <p>Суббота </p>
+            <span>10:00 — 15:00</span>
+          </li>
+          <li>
+            <p>Воскресение</p>
+            <span>выходной</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <div class="phones">
+        <div class="phones-list">
+          <a href="tel:+78123287912" class="tel">8 (812) 328-79-12</a>
+          <a href="tel:+79313967770" class="tel">8 (931) 396-77-70</a>
+        </div>
+        <div class="phones-icon">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="address">
+        <div class="address-icon">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>
+        </div>
+        <div class="address-text">
+          Санкт-Петербург, <br>
+          Малый проспект В.О., д.5 лит. А <br>
+          м. Василеостровская / м. Спортивная-2
+        </div>
+      </div>
+      <a href="mailto:psoriascentr@mail.ru" class="mail">
+        <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+        <span class="mail-text">psoriascentr@mail.ru</span>
+      </a>
+    </div>
   </div>
 </footer>
+
+
+<div class="modal__div" id="scheduleModal">
+  <div class="modal__wrapper">
+    <div class="modal__close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+   <div class="box-text">
+     <p>04.11.2021 <br>
+       центр не работает.
+       Приносим свои
+       извинения</p>
+   </div>
+  </div>
+</div>
+
+<div class="modal__div" id="thanks__modal">
+  <div class="modal__wrapper">
+    <div class="modal__close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+    <div class="box-text">
+      <p>Ваша заявка
+        успешно отправлена.
+        Мы свяжемся с вами
+        в ближайшее время!</p>
+    </div>
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/common.js"></script>
 
